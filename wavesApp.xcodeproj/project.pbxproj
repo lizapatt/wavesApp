@@ -14,6 +14,9 @@
 		C28055F1286B901C0056AF47 /* wavesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C28055EF286B901C0056AF47 /* wavesApp.xcdatamodeld */; };
 		C28055F3286B901D0056AF47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28055F2286B901D0056AF47 /* Assets.xcassets */; };
 		C28055F6286B901D0056AF47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28055F4286B901D0056AF47 /* LaunchScreen.storyboard */; };
+		C2ED042F286CA9FA00A0173D /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ED042E286CA9FA00A0173D /* InitialViewController.swift */; };
+		C2ED0431286CAA3300A0173D /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ED0430286CAA3300A0173D /* WelcomePageViewController.swift */; };
+		C2ED0433286CC19500A0173D /* timerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ED0432286CC19500A0173D /* timerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		C28055F2286B901D0056AF47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C28055F5286B901D0056AF47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C28055F7286B901D0056AF47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2ED042E286CA9FA00A0173D /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		C2ED0430286CAA3300A0173D /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
+		C2ED0432286CC19500A0173D /* timerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 				C28055E8286B901C0056AF47 /* SceneDelegate.swift */,
 				C28055EA286B901C0056AF47 /* ViewController.swift */,
 				C28055EC286B901C0056AF47 /* Main.storyboard */,
+				C2ED0432286CC19500A0173D /* timerViewController.swift */,
+				C2ED0430286CAA3300A0173D /* WelcomePageViewController.swift */,
+				C2ED042E286CA9FA00A0173D /* InitialViewController.swift */,
 				C28055F2286B901D0056AF47 /* Assets.xcassets */,
 				C28055F4286B901D0056AF47 /* LaunchScreen.storyboard */,
 				C28055F7286B901D0056AF47 /* Info.plist */,
@@ -141,9 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2ED042F286CA9FA00A0173D /* InitialViewController.swift in Sources */,
 				C28055F1286B901C0056AF47 /* wavesApp.xcdatamodeld in Sources */,
 				C28055EB286B901C0056AF47 /* ViewController.swift in Sources */,
+				C2ED0433286CC19500A0173D /* timerViewController.swift in Sources */,
 				C28055E7286B901C0056AF47 /* AppDelegate.swift in Sources */,
+				C2ED0431286CAA3300A0173D /* WelcomePageViewController.swift in Sources */,
 				C28055E9286B901C0056AF47 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
