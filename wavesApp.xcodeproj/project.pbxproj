@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C24B099A286E04C2009D407B /* reflectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24B0999286E04C2009D407B /* reflectionViewController.swift */; };
 		C28055E7286B901C0056AF47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28055E6286B901C0056AF47 /* AppDelegate.swift */; };
 		C28055E9286B901C0056AF47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28055E8286B901C0056AF47 /* SceneDelegate.swift */; };
 		C28055EB286B901C0056AF47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28055EA286B901C0056AF47 /* ViewController.swift */; };
@@ -14,14 +15,15 @@
 		C28055F1286B901C0056AF47 /* wavesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C28055EF286B901C0056AF47 /* wavesApp.xcdatamodeld */; };
 		C28055F3286B901D0056AF47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28055F2286B901D0056AF47 /* Assets.xcassets */; };
 		C28055F6286B901D0056AF47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28055F4286B901D0056AF47 /* LaunchScreen.storyboard */; };
+		C2AA7D29286DFB9D008F883D /* entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA7D28286DFB9D008F883D /* entry.swift */; };
 		C2CA431C286CCF790019D09B /* reflectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CA431B286CCF790019D09B /* reflectionTableViewController.swift */; };
-		C2CA431E286CD2920019D09B /* reflectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CA431D286CD2920019D09B /* reflectionViewController.swift */; };
 		C2ED042F286CA9FA00A0173D /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ED042E286CA9FA00A0173D /* InitialViewController.swift */; };
 		C2ED0431286CAA3300A0173D /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ED0430286CAA3300A0173D /* WelcomePageViewController.swift */; };
 		C2ED0433286CC19500A0173D /* timerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ED0432286CC19500A0173D /* timerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C24B0999286E04C2009D407B /* reflectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reflectionViewController.swift; sourceTree = "<group>"; };
 		C28055E3286B901C0056AF47 /* wavesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wavesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28055E6286B901C0056AF47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C28055E8286B901C0056AF47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,8 +33,8 @@
 		C28055F2286B901D0056AF47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C28055F5286B901D0056AF47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C28055F7286B901D0056AF47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2AA7D28286DFB9D008F883D /* entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = entry.swift; sourceTree = "<group>"; };
 		C2CA431B286CCF790019D09B /* reflectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reflectionTableViewController.swift; sourceTree = "<group>"; };
-		C2CA431D286CD2920019D09B /* reflectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reflectionViewController.swift; sourceTree = "<group>"; };
 		C2ED042E286CA9FA00A0173D /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		C2ED0430286CAA3300A0173D /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
 		C2ED0432286CC19500A0173D /* timerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +74,8 @@
 				C28055E8286B901C0056AF47 /* SceneDelegate.swift */,
 				C28055EA286B901C0056AF47 /* ViewController.swift */,
 				C28055EC286B901C0056AF47 /* Main.storyboard */,
-				C2CA431D286CD2920019D09B /* reflectionViewController.swift */,
+				C24B0999286E04C2009D407B /* reflectionViewController.swift */,
+				C2AA7D28286DFB9D008F883D /* entry.swift */,
 				C2CA431B286CCF790019D09B /* reflectionTableViewController.swift */,
 				C2ED0432286CC19500A0173D /* timerViewController.swift */,
 				C2ED0430286CAA3300A0173D /* WelcomePageViewController.swift */,
@@ -157,12 +160,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2CA431C286CCF790019D09B /* reflectionTableViewController.swift in Sources */,
-				C2CA431E286CD2920019D09B /* reflectionViewController.swift in Sources */,
 				C2ED042F286CA9FA00A0173D /* InitialViewController.swift in Sources */,
 				C28055F1286B901C0056AF47 /* wavesApp.xcdatamodeld in Sources */,
+				C2AA7D29286DFB9D008F883D /* entry.swift in Sources */,
 				C28055EB286B901C0056AF47 /* ViewController.swift in Sources */,
 				C2ED0433286CC19500A0173D /* timerViewController.swift in Sources */,
 				C28055E7286B901C0056AF47 /* AppDelegate.swift in Sources */,
+				C24B099A286E04C2009D407B /* reflectionViewController.swift in Sources */,
 				C2ED0431286CAA3300A0173D /* WelcomePageViewController.swift in Sources */,
 				C28055E9286B901C0056AF47 /* SceneDelegate.swift in Sources */,
 			);
@@ -311,6 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = wavesApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -338,6 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = wavesApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

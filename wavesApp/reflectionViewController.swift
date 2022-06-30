@@ -8,14 +8,31 @@
 import UIKit
 
 class reflectionViewController: UIViewController {
+    
+    var previousVC = reflectionTableViewViewController()
 
+    @IBOutlet weak var titleField: UITextField!
+    @IBOutlet weak var bodyField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func addTapped(_ sender: Any) {
+        
+        let entry = entry()
+        if let titleText = titleField.text {
+            entry.title = titleText
+        }
+        if let bodyText = bodyField.text {
+            entry.body = bodyText
+        }
+        previousVC.entries.append(entry)
+        previousVC.tableView.reloadData()
+        navigationController?.popViewController(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
