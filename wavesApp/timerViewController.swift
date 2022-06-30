@@ -68,7 +68,7 @@ class timerViewController:UIViewController
     
     
     
-    }
+    
     
     
     
@@ -98,7 +98,7 @@ class timerViewController:UIViewController
     
     
     
-}
+
     
     // MARK: - Navigation
 /*
