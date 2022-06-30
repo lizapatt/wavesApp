@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="wavesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="community" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dng-gj-WS5">
@@ -28,6 +28,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="xwd-AT-Zl1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,17 +42,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eKR-Ft-tEv">
-                                <rect key="frame" x="106" y="356" width="202" height="185"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Waves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fur-pJ-yNz">
-                                <rect key="frame" x="92" y="227" width="230" height="64"/>
+                                <rect key="frame" x="78" y="227" width="230" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eKR-Ft-tEv">
+                                <rect key="frame" x="92" y="356" width="202" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0ku-oV-GM2"/>
                         <color key="backgroundColor" red="0.60071444709999999" green="0.74215233759999999" blue="0.8630086602" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -75,7 +76,7 @@
             <objects>
                 <viewController id="AwR-Mf-KcR" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6e0-eb-Aw2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0V-fk-1UI">
@@ -89,6 +90,7 @@
                         <viewLayoutGuide key="safeArea" id="beJ-Ov-bur"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Xen-KU-fqy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uAk-wb-12n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,16 +127,92 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RVu-BD-mei">
+                                <rect key="frame" x="40" y="587" width="334" height="235"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFb-Jc-Qzb">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="31"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Start"/>
+                                        <connections>
+                                            <action selector="startbutton:" destination="wEp-hv-DyA" eventType="touchUpInside" id="RCX-xi-klK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QA8-iU-KXp">
+                                        <rect key="frame" x="0.0" y="51" width="334" height="31"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Pause"/>
+                                        <connections>
+                                            <action selector="pausebutton:" destination="wEp-hv-DyA" eventType="touchUpInside" id="oxR-Be-zwh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYz-wJ-cbb">
+                                        <rect key="frame" x="0.0" y="102" width="334" height="31"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                                        <connections>
+                                            <action selector="resetbutton:" destination="wEp-hv-DyA" eventType="touchUpInside" id="H1f-bi-AVK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQL-GB-ea1">
+                                        <rect key="frame" x="0.0" y="153" width="334" height="31"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="+5"/>
+                                        <connections>
+                                            <action selector="plusfivebutton:" destination="wEp-hv-DyA" eventType="touchUpInside" id="dfK-Xu-Hbl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WY3-gk-UCv">
+                                        <rect key="frame" x="0.0" y="204" width="334" height="31"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="-5"/>
+                                        <connections>
+                                            <action selector="minusfivebutton:" destination="wEp-hv-DyA" eventType="touchUpInside" id="4tc-tu-EeS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctQ-vn-Imn">
+                                <rect key="frame" x="82" y="251" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrM-EH-s0A">
+                                <rect key="frame" x="160" y="326" width="95" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="odO-IB-2Qt"/>
                         <color key="backgroundColor" red="0.60071444709999999" green="0.74215233759999999" blue="0.8630086602" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.56408945759999995" green="0.69739729449999999" blue="0.80600559959999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="odO-IB-2Qt" firstAttribute="bottom" secondItem="RVu-BD-mei" secondAttribute="bottom" constant="40" id="JQ4-Mz-zaf"/>
+                            <constraint firstItem="odO-IB-2Qt" firstAttribute="trailing" secondItem="RVu-BD-mei" secondAttribute="trailing" constant="40" id="fuV-0h-5FV"/>
+                            <constraint firstItem="RVu-BD-mei" firstAttribute="leading" secondItem="odO-IB-2Qt" secondAttribute="leading" constant="40" id="qnh-I1-9ak"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xAe-ob-J1y"/>
+                    <connections>
+                        <outlet property="minusfiveButton" destination="WY3-gk-UCv" id="Kfu-5q-pVW"/>
+                        <outlet property="pauseButton" destination="QA8-iU-KXp" id="dDI-WR-Y3w"/>
+                        <outlet property="plusfiveButton" destination="MQL-GB-ea1" id="OR9-Wh-Cxd"/>
+                        <outlet property="resetButton" destination="fYz-wJ-cbb" id="RVT-GN-2Mb"/>
+                        <outlet property="startButton" destination="OFb-Jc-Qzb" id="c9g-4L-CHb"/>
+                        <outlet property="timerLabel" destination="BrM-EH-s0A" id="zTp-U7-Aoo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Osf-c1-vOj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="49"/>
+            <point key="canvasLocation" x="73.913043478260875" y="48.883928571428569"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QAC-vr-wM0">
@@ -171,45 +249,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roe-kw-tgT">
-                                <rect key="frame" x="127" y="485" width="161" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.19607841970000001" green="0.3686274886" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="REFLECTION">
-                                    <fontDescription key="titleFontDescription" name="Charter-Bold" family="Charter" pointSize="20"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="reflection:" destination="N71-Kd-sPB" eventType="touchUpInside" id="Ee3-Da-7YK"/>
-                                    <segue destination="BMR-ga-wSg" kind="show" id="WyQ-1i-98Z"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0M-vJ-y4i">
-                                <rect key="frame" x="127" y="580" width="161" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.19607841970000001" green="0.3686274886" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="COMMUNITY">
-                                    <fontDescription key="titleFontDescription" name="Charter-Bold" family="Charter" pointSize="20"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="community:" destination="N71-Kd-sPB" eventType="touchUpInside" id="Mq9-j2-idg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fn0-Ie-kyB">
-                                <rect key="frame" x="127" y="675" width="161" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.19607841970000001" green="0.3686274886" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="RESOURCES">
-                                    <fontDescription key="titleFontDescription" name="Charter-Bold" family="Charter" pointSize="20"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="resources:" destination="N71-Kd-sPB" eventType="touchUpInside" id="AUL-Na-hp6"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kco-lp-u9a">
-                                <rect key="frame" x="132" y="110" width="150" height="53"/>
+                                <rect key="frame" x="127" y="112" width="150" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="54"/>
                                 <nil key="textColor"/>
@@ -218,7 +259,7 @@
                                 <size key="shadowOffset" width="-1" height="-1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Waves is here to help. " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vh-3D-PyK">
-                                <rect key="frame" x="94.5" y="171" width="225" height="39"/>
+                                <rect key="frame" x="84" y="197" width="225" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="24"/>
                                 <nil key="textColor"/>
@@ -226,8 +267,21 @@
                                 <color key="shadowColor" red="0.71372550729999995" green="0.84313726430000002" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="shadowOffset" width="-1" height="-1"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roe-kw-tgT">
+                                <rect key="frame" x="95" y="411" width="214" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.19607841970000001" green="0.3686274886" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="REFLECTION">
+                                    <fontDescription key="titleFontDescription" name="Charter-Bold" family="Charter" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="reflection:" destination="N71-Kd-sPB" eventType="touchUpInside" id="Ee3-Da-7YK"/>
+                                    <segue destination="BMR-ga-wSg" kind="show" id="bz7-GI-h3d"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K70-jI-zPW">
-                                <rect key="frame" x="127" y="390" width="161" height="60"/>
+                                <rect key="frame" x="95" y="335" width="214" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.19607841970000001" green="0.3686274886" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -239,6 +293,32 @@
                                     <segue destination="wEp-hv-DyA" kind="presentation" identifier="timerSegue" animates="NO" modalPresentationStyle="fullScreen" id="ULc-LD-dja"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fn0-Ie-kyB">
+                                <rect key="frame" x="95" y="561" width="214" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.19607841970000001" green="0.3686274886" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title=" RESOURCES">
+                                    <fontDescription key="titleFontDescription" name="Charter-Bold" family="Charter" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resources:" destination="N71-Kd-sPB" eventType="touchUpInside" id="AUL-Na-hp6"/>
+                                    <segue destination="AwR-Mf-KcR" kind="show" id="xBj-yR-xQ8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0M-vJ-y4i">
+                                <rect key="frame" x="95" y="487" width="214" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.19607841970000001" green="0.3686274886" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="COMMUNITY">
+                                    <fontDescription key="titleFontDescription" name="Charter-Bold" family="Charter" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="community:" destination="N71-Kd-sPB" eventType="touchUpInside" id="Mq9-j2-idg"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="9gK-Ot-XoC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EqB-FF-x5b"/>
                         <color key="backgroundColor" red="0.60071444709999999" green="0.74215233759999999" blue="0.8630086602" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -246,24 +326,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wVX-Zb-NXL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="-696"/>
+            <point key="canvasLocation" x="73.913043478260875" y="-696.42857142857144"/>
         </scene>
         <!--Reflection View Controller-->
         <scene sceneID="Vp3-zP-0gs">
             <objects>
                 <viewController id="3pm-sw-YuN" customClass="reflectionViewController" customModule="wavesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GSe-bG-RwN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aj-gB-kt1">
-                                <rect key="frame" x="130" y="291" width="154" height="24"/>
+                                <rect key="frame" x="130" y="247" width="154" height="24"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vix-3U-W12">
-                                <rect key="frame" x="102" y="207" width="210" height="34"/>
+                                <rect key="frame" x="102" y="163" width="210" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -316,7 +396,7 @@
             <objects>
                 <tableViewController id="BMR-ga-wSg" customClass="reflectionTableViewController" customModule="wavesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="MQE-FJ-uJe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -367,14 +447,16 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ULc-LD-dja"/>
-        <segue reference="BiI-Si-lK5"/>
+        <segue reference="bz7-GI-h3d"/>
         <segue reference="1GF-SJ-GQc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.backward.circle.fill" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
