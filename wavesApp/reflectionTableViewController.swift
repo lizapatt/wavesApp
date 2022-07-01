@@ -20,12 +20,12 @@ class reflectionTableViewViewController: UITableViewController {
     // function returns array of entry class objects
     func createEntries() -> [entry]{
         let dayOne = entry()
-        dayOne.title = "Day ONE"
-        dayOne.body = "I worked really hard today."
+        dayOne.title = "Welcome to the REFLECTIONS Page."
+        dayOne.body = ""
         
         let dayTwo = entry()
-        dayTwo.title = "Day Two"
-        dayTwo.body = "I worked really hard today."
+        dayTwo.title = "Add your own entries here!"
+        dayTwo.body = ""
         
         return [dayOne, dayTwo]
     }
