@@ -1,37 +1,39 @@
 //
-//  reflectionViewController.swift
+//  communityPostViewController.swift
 //  wavesApp
 //
-//  Created by Liza Patt on 30/6/22.
+//  Created by Liza Patt on 1/7/22.
 //
 
 import UIKit
 
-class reflectionViewController: UIViewController {
-    
-    var previousVC = reflectionTableViewViewController()
+class communityPostViewController: UIViewController {
 
+    
+    var previousVC = communityTableViewViewController()
+    
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var bodyLabel: UILabel!
     @IBOutlet weak var titleField: UITextField!
+    @IBOutlet weak var bodyLabel: UILabel!
     @IBOutlet weak var bodyField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func addTapped(_ sender: UIButton) {
+    @IBAction func addTapped(_ sender: UIBarButtonItem) {
         
-        let entry = entry()
+        let post = post()
         
         if let titleText = titleField.text {
-            entry.title = titleText
+            post.title = titleText
         }
         if let bodyText = bodyField.text {
-            entry.body = bodyText
+            post.body = bodyText
         }
-        previousVC.entries.append(entry)
+        previousVC.posts.append(post)
         previousVC.tableView.reloadData()
         navigationController?.popViewController(animated: true)
     }

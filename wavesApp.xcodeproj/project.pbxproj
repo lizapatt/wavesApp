@@ -15,6 +15,9 @@
 		C28055F1286B901C0056AF47 /* wavesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C28055EF286B901C0056AF47 /* wavesApp.xcdatamodeld */; };
 		C28055F3286B901D0056AF47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28055F2286B901D0056AF47 /* Assets.xcassets */; };
 		C28055F6286B901D0056AF47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28055F4286B901D0056AF47 /* LaunchScreen.storyboard */; };
+		C28D9A11286F3F3A00995EA8 /* communityPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28D9A10286F3F3A00995EA8 /* communityPostViewController.swift */; };
+		C28D9A13286F3F9A00995EA8 /* communityTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28D9A12286F3F9A00995EA8 /* communityTableTableViewController.swift */; };
+		C28D9A15286F3FE800995EA8 /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28D9A14286F3FE800995EA8 /* post.swift */; };
 		C2AA7D29286DFB9D008F883D /* entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA7D28286DFB9D008F883D /* entry.swift */; };
 		C2CA431C286CCF790019D09B /* reflectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CA431B286CCF790019D09B /* reflectionTableViewController.swift */; };
 		C2ED042F286CA9FA00A0173D /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ED042E286CA9FA00A0173D /* InitialViewController.swift */; };
@@ -33,6 +36,9 @@
 		C28055F2286B901D0056AF47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C28055F5286B901D0056AF47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C28055F7286B901D0056AF47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C28D9A10286F3F3A00995EA8 /* communityPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = communityPostViewController.swift; sourceTree = "<group>"; };
+		C28D9A12286F3F9A00995EA8 /* communityTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = communityTableTableViewController.swift; sourceTree = "<group>"; };
+		C28D9A14286F3FE800995EA8 /* post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
 		C2AA7D28286DFB9D008F883D /* entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = entry.swift; sourceTree = "<group>"; };
 		C2CA431B286CCF790019D09B /* reflectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reflectionTableViewController.swift; sourceTree = "<group>"; };
 		C2ED042E286CA9FA00A0173D /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +80,9 @@
 				C28055E8286B901C0056AF47 /* SceneDelegate.swift */,
 				C28055EA286B901C0056AF47 /* ViewController.swift */,
 				C28055EC286B901C0056AF47 /* Main.storyboard */,
+				C28D9A14286F3FE800995EA8 /* post.swift */,
+				C28D9A12286F3F9A00995EA8 /* communityTableTableViewController.swift */,
+				C28D9A10286F3F3A00995EA8 /* communityPostViewController.swift */,
 				C24B0999286E04C2009D407B /* reflectionViewController.swift */,
 				C2AA7D28286DFB9D008F883D /* entry.swift */,
 				C2CA431B286CCF790019D09B /* reflectionTableViewController.swift */,
@@ -161,13 +170,16 @@
 			files = (
 				C2CA431C286CCF790019D09B /* reflectionTableViewController.swift in Sources */,
 				C2ED042F286CA9FA00A0173D /* InitialViewController.swift in Sources */,
+				C28D9A13286F3F9A00995EA8 /* communityTableTableViewController.swift in Sources */,
 				C28055F1286B901C0056AF47 /* wavesApp.xcdatamodeld in Sources */,
+				C28D9A15286F3FE800995EA8 /* post.swift in Sources */,
 				C2AA7D29286DFB9D008F883D /* entry.swift in Sources */,
 				C28055EB286B901C0056AF47 /* ViewController.swift in Sources */,
 				C2ED0433286CC19500A0173D /* timerViewController.swift in Sources */,
 				C28055E7286B901C0056AF47 /* AppDelegate.swift in Sources */,
 				C24B099A286E04C2009D407B /* reflectionViewController.swift in Sources */,
 				C2ED0431286CAA3300A0173D /* WelcomePageViewController.swift in Sources */,
+				C28D9A11286F3F3A00995EA8 /* communityPostViewController.swift in Sources */,
 				C28055E9286B901C0056AF47 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
